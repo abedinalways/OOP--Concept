@@ -1,20 +1,10 @@
-class Car {
+class Car{
   startEngine() {
-    this.#injectFuel();
-    this.#sparkPlugs();
-    console.log('Car started');
+    console.log('start the engine')
   }
-
-  #injectFuel() {
-    console.log('Fuel injected');
-  }
-
-  #sparkPlugs() {
-    console.log('Spark created');
+  drive() {
+    console.log('drive the car')
   }
 }
-
-const car = new Car();
-car.startEngine();
-// "Fuel injected", "Spark created", "Car started"
-// But cannot call #injectFuel() directly
+const myCar = new Car();
+myCar.startEngine()

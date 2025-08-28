@@ -1,20 +1,18 @@
-class Shape {
-  draw() {
-    console.log('Drawing a shape');
+class feelings{
+  love() {
+    console.log('i love you')
+  }
+}
+class man extends feelings{
+  love() {
+    console.log('man loves women')
+  }
+}
+class woman extends feelings{
+  love() {
+    console.log('woman loves money')
   }
 }
 
-class Circle extends Shape {
-  draw() {
-    console.log('Drawing a circle');
-  }
-}
-
-class Square extends Shape {
-  draw() {
-    console.log('Drawing a square');
-  }
-}
-
-const shapes = [new Circle(), new Square(), new Shape()];
-shapes.forEach(shape => shape.draw());
+const feelingses = [new feelings, new man, new woman];
+feelingses.forEach(feelings=>feelings.love())
